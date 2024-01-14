@@ -1,0 +1,6 @@
+# Local build files
+builds/
+# Local logs
+logs/
+# Redis files
+*.rdb
