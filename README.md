@@ -31,3 +31,9 @@ The server requires [Redis](https://redis.io/docs/install/install-redis/), [Post
 #### First time usage
 - Run `.builds/util` to instantiate the SQL DB.
 
+
+## APIs
+
+APIs between the server and UI can be found in the [here](./postman_collection.json) file.
+
+

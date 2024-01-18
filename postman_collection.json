@@ -1,0 +1,106 @@
+{
+	"info": {
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{social_access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host_url}}/api/v1/user/login/social/{{social_media}}",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login",
+								"social",
+								"{{social_media}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/api/v1/user/current",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"current"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host_url}}/api/v1/user/logout",
+							"host": [
+								"{{host_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "host_url",
+			"value": "localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "social_access_token",
+			"value": ""
+		},
+		{
+			"key": "social_media",
+			"value": "google"
+		}
+	]
+}
