@@ -2,7 +2,7 @@
 
 ## UI
 
-The UI requires [npm](https://www.npmjs.com/) to run.
+The UI requires [npm](https://www.npmjs.com/) (version 10.3.0 or up) to run.
 
 ```bash
 npm install
@@ -35,5 +35,10 @@ The server requires [Redis](https://redis.io/docs/install/install-redis/), [Post
 ## APIs
 
 APIs between the server and UI can be found in the [here](./postman_collection.json) file.
+
+
+## Demo
+
+![Working demo](demo.gif)
 
 
